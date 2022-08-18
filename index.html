@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="logo">
+        <h1><img src="assets/Vector.png" alt="logo" /></h1>
+      </header>
+      <main class="content">
+        <section class="section_input">
+          <div class="section_text">
+            <textarea
+              name="text"
+              id="text"
+              placeholder="Ingrese el texto aqui"
+            ></textarea>
+          </div>
+          <div class="section_buttons">
+            <div class="section_buttons__description">
+              <img src="assets/Vectorsigno.png" alt="description" />
+              <span>Solo letras minusculas y sin acentos</span>
+            </div>
+            <div class="buttons">
+              <button class="btn btnEnc" id="btnEnc">Encriptar</button>
+              <button class="btn btnDes" id="btnDes">Desencriptar</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section_result">
+          <div class="result" id="result">
+            <img id="result_img" src="assets/Muñeco.png" alt="img" />
+            <strong id="result_msg">Ningún mesaje fue encontrado</strong>
+            <span id="result_msgDes">Ingresa el texto que desees encriptar o desencritar</span>
+           <div class="result_btnCopi">
+             <button class="btn btnDes btnCopi">Copiar</button>
+           </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
