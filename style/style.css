@@ -146,13 +146,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1rem;
     border-radius: 1rem;
 }
 
-.result img {
-    width: 300px;
+.result #textEncrip {
+    width: 80%;
+    height: 70%;
+    background-image: url('../assets/Muñeco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    resize: none;
+    
 }
 
 .result strong {
@@ -165,6 +172,7 @@ body {
 .result span {
     width: 90%;
     text-align: center;
+    
 
 }
 .encrytpResult{
@@ -177,14 +185,6 @@ body {
     margin: 0 auto;
     padding: 1rem;
 }
-.result_btnCopi{
-    width: 100%;
-    display: none;
-    justify-content: center;
-    height: 80%;
-    align-items: end;
-
-}
 
 .btnCopi{
     display: none;
@@ -196,6 +196,7 @@ body {
 @media (max-width:1080px) {
     .content {
         display: block;
+        height: 900px;
     }
 
     .section_text {
@@ -223,7 +224,7 @@ body {
         margin: 1rem;
         position: relative;
         left: 2rem;
-        z-index: 1111;
+        top: 2rem;
     }
 
     .result {
@@ -238,10 +239,48 @@ body {
         padding: 1rem;
     }
 
-    .result img {
-        visibility: hidden;
+    .result #textEncrip {
+        text-align: center;
+        background-image: none;
     }
     
+}
+@media (max-width:1000px){
+    .section_result {
+        top: 2rem;
+    }
+}
+@media (max-width:920px){
+    .section_result {
+        top: 2rem;
+    }
+}
+@media (max-width: 630px){
+    .section_result {
+        left:  2rem;
+    }
+    .section_text textarea {
+        width: 450px;
+        height: 450px;
+        left: 3rem;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 517px){
+    .section_result {
+        left:  2rem;
+    }
+    .section_text textarea {
+        width: 350px;
+        height: 350px;
+        left: 3rem;
+        font-size: 1.5rem;
+    }
+    .section_result {
+        
+        top: 2rem;
+        left: 1rem;
+    }
 }
 
 
@@ -276,14 +315,15 @@ body {
     }
 
     .buttons {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         align-items: flex-start;
+        left: -1rem;
         gap: 1rem;
     }
 
     .btn {
-        width: 90%;
+        width: 95%;
     }
 
     /* RESULT QUERY */
@@ -302,8 +342,11 @@ body {
         border-radius: 1rem;
     }
 
-    .result img {
-        visibility: hidden;
+    .result #textEncrip {
+
+        background-image: none;
+        
+        
     }
 
     .result strong {
@@ -374,8 +417,11 @@ body {
 
     }
 
-    .result img {
-        visibility: hidden;
+    .result #textEncrip {
+
+        background-image: none;
+        
+        
     }
 
     .result strong {
